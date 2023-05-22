@@ -22,10 +22,10 @@ function display_results(){
 
     if (document.getElementById('age_range').value == "minorenne") {
         document.getElementById('tipo_biglietto').innerHTML = 'Biglietto Under 18'
-        document.getElementById('prezzo').innerHTML = `${prezzo_arrotondato * 0.8 }€`
+        document.getElementById('prezzo').innerHTML = `${(prezzo_arrotondato * 0.8).toFixed(2)}€`
     } else if (document.getElementById('age_range').value == "over_65") {
         document.getElementById('tipo_biglietto').innerHTML = 'Biglietto Over 65'
-        document.getElementById('prezzo').innerHTML = `${prezzo_arrotondato * 0.6 }€`
+        document.getElementById('prezzo').innerHTML = `${(prezzo_arrotondato * 0.6).toFixed(2)}€`
     } else {
         document.getElementById('tipo_biglietto').innerHTML = 'Biglietto Standard'
         document.getElementById('prezzo').innerHTML = `${prezzo_arrotondato}€`
@@ -44,7 +44,3 @@ function reset_form () {
 
 genera.addEventListener('click', display_results);
 reset.addEventListener('click', reset_form);
-
-
-// let prezzo = km * 0.21 
-// document.getElementById('prezzo').innerHTML = prezzo.toFixed(2) + '€';

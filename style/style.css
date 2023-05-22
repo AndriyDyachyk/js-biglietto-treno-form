@@ -3,3 +3,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+main{
+    background-color: rgb(185, 20, 80);
+    height: 100vh;
+}
+
+.content, .content_biglietto{
+    background-color: white;
+}
+
+.content {
+    border-radius: 20px;
+}
+
+label, button{
+    color: rgb(185, 20, 80);
+    font-weight: bold;
+}
+
+input, button, select{
+    text-align: center;
+    border: 2px solid rgb(185, 20, 80);
+    border-radius: 5px;
+}
+
+button{
+    padding: 5px ;
+    background-color: lightgrey;
+}
+
+button:hover{
+    border-color: gold;
+}
+
+#biglietto p:first-of-type {
+    font-weight: bold;
+}
