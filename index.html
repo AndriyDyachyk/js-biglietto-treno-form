@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./script/main.js"></script>
+</head>
+<body>
+    <section id="ins_dati">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                </div>
+            </div>
+            <div class="container content">
+                <div class="row">
+                    <form action="#" id="dati">
+                        <label for="name">Nome e Cognome</label>
+                        <input type="text" id="name" required>
+                        <label for="km">Km da percorrere</label>
+                        <input type="number" id="km" required>
+                        <label for="age_range">Fascia d'età</label>
+                        <select name="age_range" id="age_range">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over_65">Over 65</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" id="genera">
+                            Genera
+                        </button>
+                        <button type="submit" id="reset">
+                            Annulla
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="biglietto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>IL TUO BIGLIETTO</h2>
+                </div>
+            </div>
+            <div class="contaner content_biglietto">
+                <div class="row">
+                    <div class="col">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <h3>NOME PASSEGGERO</h3>
+                        <p id="out_name"></p>
+                    </div>
+                    <div class="col-auto">
+                        <p>Offerta</p>
+                        <p id="tipo_biglietto"></p>
+                    </div>
+                    <div class="col-auto">
+                        <p>Carrozza</p>
+                        <p id="num_carrozza"></p>
+                    </div>
+                    <div class="col-auto">
+                        <p>Codice CP</p>
+                        <p id="codice_cp"></p>
+                    </div>
+                    <div class="col-auto">
+                        <p>Costo biglietto</p>
+                        <p id="prezzo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
